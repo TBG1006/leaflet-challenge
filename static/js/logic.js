@@ -88,15 +88,17 @@ d3.json(queryUrl).then(function (data) {
   });
 
     //   add details of legend
-
   legend.onAdd = function() {
-      var div = L.DomUtil.create("div", "info legend");
-      var grades = [-10, 10, 30, 50, 70, 90];
-      var colors = ["#98ee00", "#d4ee00", "#eecc00", "ee9c00", "ea822c", "#ea2c2c"];
-    // labels
-      for (var i = 0; i < grades.length; i++) {
-        div.innerHTML += "<i style='background: " + colors[i] + "'></i> "
-        + grades[i] + (grades[i + 1] ? "&ndash;" + grades[i + 1] + "<br>" : "+");
-      }
+    var div = L.DomUtil.create("div", "info legend");
+    var grades = [-10, 10, 30, 50, 70, 90];
+    var colors = ["#98ee00", "#d4ee00", "#eecc00", "ee9c00", "ea822c", "#ea2c2c"];
+      // labels
+    for (var i = 0; i < grades.length; i++) {
+      div.innerHTML += "<i style='background: " + colors[i] + "'></i> "
+      + grades[i] + (grades[i + 1] ? "&ndash;" + grades[i + 1] + "<br>" : "+");
+    }
       return div;
-  }:
+  };
+
+  legend.addTo(map);
+});
