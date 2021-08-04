@@ -1,7 +1,7 @@
 // Creating map object
 var map = L.map("map", {
-  center: [39.9, -75.13],
-  zoom: 8,
+  center: [50, -75.13],
+  zoom: 3,
 });
 
 // Adding tile layer to the map
@@ -16,7 +16,7 @@ var graymap = L.tileLayer(
     id: "mapbox/streets-v11",
     accessToken: API_KEY,
   }
-)
+);
 graymap.addTo(map);
 
 // Store our API endpoint inside queryUrl
@@ -62,7 +62,7 @@ d3.json(queryUrl).then(function (data) {
 
     return magnitude * 4;
   }
-
+  // add GeoJSON data
   L.geoJSON(data, {
     pointToLayer: function (feature, LatLng) {
       return L.circleMarker(LatLng);
@@ -80,4 +80,23 @@ d3.json(queryUrl).then(function (data) {
       );
     },
   }).addTo(map);
-});
+
+  // add legned
+
+  var legend = L.control({
+    position: "bottomright",
+  });
+
+    //   add details of legend
+
+  legend.onAdd = function() {
+      var div = L.DomUtil.create("div", "info legend");
+      var grades = [-10, 10, 30, 50, 70, 90];
+      var colors = ["#98ee00", "#d4ee00", "#eecc00", "ee9c00", "ea822c", "#ea2c2c"];
+    // labels
+      for (var i = 0; i < grades.length; i++) {
+        div.innerHTML += "<i style='background: " + colors[i] + "'></i> "
+        + grades[i] + (grades[i + 1] ? "&ndash;" + grades[i + 1] + "<br>" : "+");
+      }
+      return div;
+  }:
