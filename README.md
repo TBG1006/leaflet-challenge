@@ -4,7 +4,7 @@
 
 ### Global view:
 
-![1-Logo](Images/1-Logo.png)
+![1-Logo](Images/global_view.PNG)
 
 
 
