@@ -6,9 +6,9 @@
 
 ![1-Logo](Images/global_view.PNG)
 
+### Detailed view:
 
-
-
+![1-Logo](Images/alaska_view.PNG)
 
 
 ## Background
