@@ -1,5 +1,9 @@
 # Leaflet Homework - Visualizing Data with Leaflet
 
+## Background
+
+The USGS provides earthquake data in a number of different formats, updated every 5 minutes. This code uses leaflet to create an interactive map that plots all of the earthquakes from the last seven days based on their longitude and latitude.
+
 ## Results
 
 ### [Open interactive map here:](https://tbg1006.github.io/leaflet-challenge/)
@@ -13,7 +17,7 @@
 ![1-Logo](Images/alaska_view.PNG)
 
 
-## Background
+<!-- ## Background
 
 ![1-Logo](Images/1-Logo.png)
 
@@ -61,4 +65,4 @@ Your first task is to visualize an earthquake data set.
 
    * Create a legend that will provide context for your map data.
 
-   * Your visualization should look something like the map above.
+   * Your visualization should look something like the map above. -->
