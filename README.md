@@ -2,7 +2,7 @@
 
 ## Background
 
-The USGS provides earthquake data in a number of different formats, updated every 5 minutes. This code uses leaflet to create an interactive map that plots all of the earthquakes from the last seven days based on their longitude and latitude.
+The USGS provides [earthquake data](http://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) in a number of different formats, updated every 5 minutes. This code uses leaflet to create an interactive map that plots all of the earthquakes from the last seven days based on their longitude and latitude.
 
 ## Results
 
