@@ -2,6 +2,8 @@
 
 ## Results
 
+### [Open interactive map here:](https://tbg1006.github.io/leaflet-challenge/)
+
 ### Global view:
 
 ![1-Logo](Images/global_view.PNG)
